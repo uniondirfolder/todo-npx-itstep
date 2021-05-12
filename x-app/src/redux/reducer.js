@@ -22,7 +22,8 @@ export let reducer = (state = todos, action) => {
                 }
 
             }
-            if (index !== -1) {
+            if (index !== -1 && action.payload.name !=='') {
+                
                 newTodos[index] = action.payload;
                 return newTodos;
             }

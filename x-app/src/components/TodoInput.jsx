@@ -10,7 +10,7 @@ function TodoInput() {
 
     return (
         <>
-            <div><h3>TodoList React :) Redux</h3><line>*****</line> </div>
+            <div><h3>TodoList React :) Redux</h3><br /> ***** </div>
             <div className="row m-2">
                 <div className="col-10">
                     <input
@@ -25,7 +25,9 @@ function TodoInput() {
                         onClick={() => {
                             dispatch(addTodo({
                                 id: uuid(),
-                                name: names
+                                name: names,
+                                completed: false,
+                                editable: false
                             }));
                             setName('');
                         }}
