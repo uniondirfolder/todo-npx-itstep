@@ -10,7 +10,7 @@ function TodoItem({ todo }) {
     let dispatch = useDispatch();
 
     return (
-        <div>
+        <div className="item">
             <div className="row mx-2 align-items-center">
                 {/* <div className="col-1">#{todo.id.length > 1 ? todo.id[2] : todo.id}</div> */}
                 <div className="col-1">
